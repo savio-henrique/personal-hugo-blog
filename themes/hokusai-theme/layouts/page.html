@@ -1,9 +1,9 @@
 {{ define "main" }}
   <div class="page-header">
     {{ if .Params.job }}
-      <a href={{ "/jobs" | relLangURL }}>&lt; jobs</a>
+      <a href={{ "jobs/" | relLangURL }}>&lt; jobs</a>
     {{ else }}
-      <a href={{ "/posts" | relLangURL }}>&lt; blog</a>
+      <a href={{ "posts/" | relLangURL }}>&lt; blog</a>
     {{ end }}
     {{ if .Params.rss }}
       <a class="rss-feed-page" href="/posts/index.xml" aria-label="RSS feed for {{ .Title }}">
