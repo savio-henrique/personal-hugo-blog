@@ -446,6 +446,7 @@ footer *{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 .add-comment-button::before {
@@ -453,10 +454,9 @@ footer *{
 }
 
 .add-comment-button:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: var(--primary-dark);
 }
-
 
 .job-info {
   display: flex;
@@ -466,6 +466,7 @@ footer *{
   border-bottom: 1px solid var(--primary-dark);
   margin-bottom: 1rem;
 }
+
 .job-info *{
   margin:0;
 }
