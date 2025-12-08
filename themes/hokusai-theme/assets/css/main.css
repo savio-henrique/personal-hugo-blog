@@ -408,6 +408,56 @@ footer *{
   border-radius: 8px;
 }
 
+.page-content > h6 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-dark);
+  font-size: 1rem;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--primary-dark);
+  margin: 0.8rem 1rem 0.8rem 0;
+  padding-left: 1rem;
+  color: var(--text-dark);
+  font-style: italic;
+} 
+
+.page-content blockquote :is(h1, h2, h3, h4, h5, h6) {
+  font-size: 0.8rem;
+}
+
+.page-content blockquote p {
+  font-size: 0.6rem;
+}
+
+.page-content blockquote hr {
+  border-color: var(--primary-dark);
+}
+
+.add-comment-button {
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--accent-dark);
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-comment-button::before {
+  content: "+ ";
+}
+
+.add-comment-button:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
+
 .job-info {
   display: flex;
   flex-direction: column;
