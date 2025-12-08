@@ -1,6 +1,6 @@
 +++
 date = '2025-12-08T11:16:52-03:00'
-draft = true
+draft = false
 title = 'Backend Developer'
 job = true
 from = '2023-12-15'

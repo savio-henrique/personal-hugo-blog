@@ -5,9 +5,11 @@
     {{ else }}
       <a href={{ "/posts" | relLangURL }}>&lt; blog</a>
     {{ end }}
+    {{ if .Params.rss }}
       <a class="rss-feed-page" href="/posts/index.xml" aria-label="RSS feed for {{ .Title }}">
         <img class="rss-feed-icon-page" src='/rss-svgrepo-com.svg'/>rss
       </a>
+    {{ end }}
   </div>
   <div class="page scroll">
     <h1>{{ .Title }}</h1>
