@@ -54,11 +54,18 @@ body::after {
   display: flex;
   flex-direction: column;
   width: 80vw;
+  max-width: 800px;
   height: 70vh;
   align-items: center;
   background-color: var(--bg-dark);
   border: 1px solid var(--text-dark);
   border-radius: 8px;
+}
+
+.scroll {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-dark) transparent;
 }
 
 .content {
@@ -75,6 +82,8 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+/* header styling*/
+
 header {
   border-bottom: 1px solid var(--text-dark);
   width: 100%;
@@ -88,7 +97,6 @@ nav ul {
   list-style: none;
   display: flex;
   width: 100%;
-  gap: 1rem;
   padding: 0;
   margin: 0;
 
@@ -97,13 +105,38 @@ nav ul {
 
 nav ul li {
   margin: 0;
-  width: 200rem;
+  width: 100%;
   text-align: center;
 }
 
 a {
-  color: var(--accent-dark);
+  color: var(--text-dark);
+  font-weight: bold;
   text-decoration: none;
+}
+a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.active {
+  color: var(--primary-dark);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+  background-color: rgba(142,181,224,0.2);
 }
 
 @keyframes pan {
@@ -134,7 +167,6 @@ main {
 .section-header {
   display: flex;
   justify-content: space-between;
-  overflow:auto;
   min-height: 20%;
   font-size: clamp(0.7rem, 1vw, 1rem);
 }
@@ -169,13 +201,9 @@ main {
 .section-listing {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   max-height: 80%;
   background-image: var(--post-gradient-dark);
   border-radius: 8px;
-
-  scrollbar-width: thin;
-  scrollbar-color: var(--text-dark) transparent;
 }
 
 .section-listing::after {
@@ -239,7 +267,6 @@ main {
 .post-date {
   color: var(--primary-dark);
   font-size: 0.8rem;
-  float: left;
 }
 
 /* footer */
@@ -251,13 +278,38 @@ footer {
   text-align: center
 }
 
-/* page styling */
-.page {
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--text-dark) transparent;
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
+.social-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  width: 2rem; 
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: inherit;
+  fill: var(--text-dark);
+}
+
+/* page styling */
 .page-header {
   display: flex;
   justify-content: space-between;

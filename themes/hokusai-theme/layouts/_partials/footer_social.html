@@ -1,0 +1,12 @@
+<div class="footer-social">
+  <ul class="social-links">
+  {{- range .Site.Params.socials }}
+    {{- $attrs := dict "href" .URL }}
+    {{- $name := .name }}
+    <li>
+      <a href= {{ .url }} target="_blank" rel="noopener noreferrer" aria-label={{ $name }}
+      ><img class="social-icon" src={{ .iconUrl }}></a>
+    </li>
+  {{- end }}
+  </ul>
+</div>

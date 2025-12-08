@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="section-header">
+  <div class="section-header scroll">
     <div class="section-content">
     {{ .Content }}
     </div>
@@ -12,7 +12,7 @@
     {{ end }}
   </div>
   {{ if .Params.list }}
-    <div class="section-listing">
+    <div class="section-listing scroll">
     {{ range .Pages }}
       <section> 
         <a href="{{ .RelPermalink }}">
@@ -24,9 +24,21 @@
               {{ end }}
             </div>
             <p class="post-summary"> {{ .Content | strings.Truncate 200| transform.Plainify }} </p>
+            {{ if .Params.job }}
+              <div class="job-time">
+                {{ $dateFromMachine := .Params.from | time.Format "2006-01-02" }}
+                {{ $dateFromHuman := .Params.from | time.Format ":date_medium" }}
+                {{ $dateToMachine := .Params.to | time.Format "2006-01-02" }}
+                {{ $dateToHuman := .Params.to | time.Format ":date_medium" }}
+                <time class="post-date" datetime="{{ $dateFromMachine }}">{{ $dateFromHuman }}</time>
+                <span> to </span>
+                <time class="post-date" datetime="{{ $dateToMachine }}">{{ $dateToHuman }}</time>
+              </div>
+            {{ else }}
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} 
             {{ $dateHuman := .Date | time.Format ":date_long" }}
             <time class="post-date" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{ end }}
           </div>
         </a>
       </section>

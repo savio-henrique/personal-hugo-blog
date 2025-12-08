@@ -6,7 +6,28 @@
     <description>Recent content in Jobs on shx</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2025 11:23:10 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fullstack Developer</title>
+      <link>http://localhost:1313/jobs/fullstack_developer_age/</link>
+      <pubDate>Mon, 08 Dec 2025 11:23:10 -0300</pubDate>
+      <guid>http://localhost:1313/jobs/fullstack_developer_age/</guid>
+      <description>&lt;h2 id=&#34;stack&#34;&gt;Stack:&lt;/h2&gt;&#xA;&lt;p&gt;PHP, Laravel, TypeScript, JavaScript, Vue.js, MySQL, Docker, Linux, Git, CI/CD, Jira, Python, Selenium.&lt;/p&gt;&#xA;&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed and maintained fullstack web applications using PHP (Laravel) and JavaScript (Vue.js), ensuring responsive design and optimal performance.&lt;/li&gt;&#xA;&lt;li&gt;Collaborated with cross-functional teams to gather requirements, design solutions, and implement new features that enhanced user experience and met business objectives.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Backend Developer</title>
+      <link>http://localhost:1313/jobs/backend_developer_webjump/</link>
+      <pubDate>Mon, 08 Dec 2025 11:16:52 -0300</pubDate>
+      <guid>http://localhost:1313/jobs/backend_developer_webjump/</guid>
+      <description>&lt;h2 id=&#34;stack&#34;&gt;Stack:&lt;/h2&gt;&#xA;&lt;p&gt;PHP, Magento (Adobe Commerce), Redis, RabbitMQ, Postgres, Docker, Linux, Git, CI/CD, Bitbucket, Jira, Confluence.&lt;/p&gt;&#xA;&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed and maintained backend systems for e-commerce platforms using PHP and Magento, ensuring high performance and scalability.&lt;/li&gt;&#xA;&lt;li&gt;Collaborated with cross-functional teams to design and implement new features, improving user experience and&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>IT Technician</title>
+      <link>http://localhost:1313/jobs/it_technician/</link>
+      <pubDate>Mon, 08 Dec 2025 11:00:25 -0300</pubDate>
+      <guid>http://localhost:1313/jobs/it_technician/</guid>
+      <description>&lt;h2 id=&#34;stack&#34;&gt;Stack:&lt;/h2&gt;&#xA;&lt;p&gt;Joomla, PHP, Python, Linux, HTML, CSS, JavaScript.&lt;/p&gt;&#xA;&lt;h2 id=&#34;responsibilities&#34;&gt;Responsibilities:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Provided technical support and troubleshooting for hardware and software issues, ensuring minimal downtime for users.&lt;/li&gt;&#xA;&lt;li&gt;Managed and maintained computer systems, including installation, configuration, and updates of software applications.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

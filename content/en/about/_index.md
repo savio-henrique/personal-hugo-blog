@@ -6,17 +6,17 @@ draft = false
 
 # about me
 
-hi! my name is sávio mendes, aka **shx**.
-i'm an inspired software engineer with a love for devops, who just want to make fun and engaging projects that people enjoy.
+Hi! My name is Sávio Mendes, aka **shx**.
+I'm an inspired **Software Engineer** with a love for **Devops**, who just want to make fun and engaging projects that people enjoy.
 
 ## study
 
-i have a technical degree in system analysis and developmen and a professional degree in graphic design, so i use the best of my expertise to create projects that resonate with my skills and backgrounds.
+I have a **Technical Degree in System Analysis and Development** and a **Professional Degree in Graphic Design**, so I use the best of my expertise to create projects that resonate with my skills and backgrounds.
 
-i'm currently pursuing a bachelor and teaching degree on computer science on the University of Brasília.
+I'm currently pursuing a **Bachelor and Teaching Degree on Computer Science** on the **University of Brasília**.
 
 ## hobbies
 
-i'm currently developing and maintaining a self-hosted homelab, in which i apply multiple principles of devsecops, network, containerization and server administration.
-all that documented and well-written declaratively utilizing the Nix language on the NixOS Linux distro.
+I'm currently developing and maintaining a *self-hosted* **Homelab**, in which i apply multiple principles of **Devsecops**, network, containerization and server administration.
 
+All that documented and well-written declaratively utilizing the **Nix** language with the **NixOS Linux distro**.

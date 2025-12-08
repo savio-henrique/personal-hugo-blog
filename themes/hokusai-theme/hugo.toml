@@ -6,6 +6,22 @@ enableEmoji = true
 [params]
   background_image = '/Lambda-pattern.svg'
   content_background_image = '/Points-pattern.svg'
+  [params.socials]
+    [params.socials.github]
+      name = 'GitHub'
+      iconUrl = '/github-142-svgrepo-com.svg'
+      url = 'https://github.com/savio-henrique/'
+      weight = 10
+    [params.socials.linkedin]
+      name = 'LinkedIn'
+      iconUrl = '/linkedin-161-svgrepo-com.svg'
+      url = 'https://www.linkedin.com/in/savio-mendes/'
+      weight = 20
+    [params.socials.email]
+      name = 'Email'
+      iconUrl = '/email-svgrepo-com.svg'
+      url = 'mailto:savio.mendes@shxhomelab.work?subject=Contact%20via%20Personal%20Website&body=Hi%20Savio,%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you...'
+      weight = 30
 
 [menus]
   [[menus.main]]
