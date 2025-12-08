@@ -127,9 +127,14 @@ main {
   height: 100%;
 }
 
+.section-content {
+  overflow: auto;
+}
+
 .section-header {
   display: flex;
   justify-content: space-between;
+  overflow:hidden;
 }
 
 .rss-feed { 
