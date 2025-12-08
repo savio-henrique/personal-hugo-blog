@@ -36,6 +36,8 @@
     {{ $dateHuman := .Date | time.Format ":date_long" }}
     <time class="page-time" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     {{ end }}
-    {{ .Content }}
+    <div class="page-content">
+      {{ .Content }}
+    </div>
   </div>
 {{ end }}

@@ -162,9 +162,7 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 1rem;
-  overflow: hidden;
   height: 100%;
 }
 
@@ -278,6 +276,13 @@ main {
   font-size: 0.8rem;
 }
 
+.post-summary {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: var(--text-dark);
+  opacity: 0.7;
+}
+
 /* footer */
 
 footer {
@@ -377,6 +382,25 @@ footer {
   color: var(--primary-dark);
   font-size: 0.9rem;
   margin-bottom: 1rem;
+}
+
+.page-content {
+  color: var(--text-dark);
+}
+
+.page-content a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+.page-content a:hover {
+  color: var(--primary-dark);
+}
+
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 

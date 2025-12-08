@@ -9,7 +9,7 @@
       {{ partial "header.html" . }}
     </header>
       <div class="content" style="background-image: url('{{ with site.Params.content_background_image }}{{ . }}{{ else }}https://www.transparenttextures.com/patterns/white-carbon.png{{ end }}');">
-      <main>
+      <main class="scroll">
         {{ block "main" . }}{{ end }}
       </main>
     </div>
