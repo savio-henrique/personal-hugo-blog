@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <div class="section-header">
+    <div>
+    {{ .Content }}
+    </div>
+    {{ if .Params.rss }}
+      <span class="rss-feed">
+        <a class="rss-feed-link" href="{{ .RelPermalink }}index.xml" aria-label="RSS feed for {{ .Title }}">
+          <img class="rss-feed-icon" src='/rss-svgrepo-com.svg'/>rss
+        </a>
+    </span>
+    {{ end }}
+  </div>
+  {{ if .Params.list }}
+    <div class="section-listing">
+    {{ range .Pages }}
+      <section> 
+        <a href="{{ .RelPermalink }}">
+          <div class="post-info">
+            <h2 class="post-title">{{ .LinkTitle }}</h2>
+            <div class="post-tags"> 
+              {{ range .Params.tags }}
+              <p class="post-tag">#{{ . }}</p>
+              {{ end }}
+            </div>
+            <p class="post-summary"> {{ .Content | strings.Truncate 200| transform.Plainify }} </p>
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} 
+            {{ $dateHuman := .Date | time.Format ":date_long" }}
+            <time class="post-date" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </div>
+        </a>
+      </section>
+    {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

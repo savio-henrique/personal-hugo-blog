@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'shx'
+theme = 'hokusai-theme'
+enableEmoji = true
+
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    title = 'shx'
+    languageCode = 'en-us'
+    languageName = 'English'
+    weight = 1
+
+  [languages.pt]
+    contentDir = 'content/pt'
+    title = 'shx'
+    languageCode = 'pt-br'
+    languageName = 'Português'
+    weight = 2

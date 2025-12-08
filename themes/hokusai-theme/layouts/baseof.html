@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+  <body style="background-image: url('{{ with site.Params.background_image }}{{ . }}{{ else }}https://www.transparenttextures.com/patterns/cubes.png{{ end }}');">
+  <div class="container">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+      <div class="content" style="background-image: url('{{ with site.Params.content_background_image }}{{ . }}{{ else }}https://www.transparenttextures.com/patterns/white-carbon.png{{ end }}');">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+  </div>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
