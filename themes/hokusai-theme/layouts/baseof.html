@@ -3,12 +3,12 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-  <body style="background-image: url('{{ with site.Params.background_image }}{{ . }}{{ else }}https://www.transparenttextures.com/patterns/cubes.png{{ end }}');">
+  <body style="background-image: url('{{ with site.Params.background_image }}{{ absURL . }}{{ else }}https://www.transparenttextures.com/patterns/cubes.png{{ end }}');">
   <div class="container">
     <header>
       {{ partial "header.html" . }}
     </header>
-      <div class="content" style="background-image: url('{{ with site.Params.content_background_image }}{{ . }}{{ else }}https://www.transparenttextures.com/patterns/white-carbon.png{{ end }}');">
+      <div class="content" style="background-image: url('{{ with site.Params.content_background_image }}{{ absURL . }}{{ else }}https://www.transparenttextures.com/patterns/white-carbon.png{{ end }}');">
       <main class="scroll">
         {{ block "main" . }}{{ end }}
       </main>

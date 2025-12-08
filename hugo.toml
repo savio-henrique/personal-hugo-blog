@@ -24,5 +24,3 @@ defaultContentLanguage = 'en'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-  [caches.static]
-    dir = ':cacheDir/static'
