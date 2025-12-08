@@ -9,7 +9,10 @@ FROM base AS builder
 
 RUN hugo build --minify
 
-FROM base as dev
+FROM base AS dev
+
+EXPOSE 1313
+CMD ["server", "-D", "--bind", "0.0.0.0"]
 
 FROM nginx:alpine AS production
 
