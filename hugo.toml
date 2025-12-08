@@ -20,3 +20,7 @@ defaultContentLanguage = 'en'
     languageCode = 'pt-br'
     languageName = 'Português'
     weight = 2
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
