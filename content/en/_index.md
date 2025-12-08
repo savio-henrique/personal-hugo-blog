@@ -12,7 +12,7 @@ feel free to explore my little corner of the internet, where i share my projects
 
 ### software stack
 
-PHP | Laravel | Magento | Typescript | Javascript | Node | Express | Next.js | React | Vue.js | React Native | HTML | CSS | Python |
+PHP | Laravel | Magento | Typescript | Javascript | Node | Express | Next.js | React | Vue.js | React Native | HTML | CSS | Python
 
 ### devops stack
 Docker | AWS | Nix | Linux | Bash | Gitlab | Github Actions | Oracle Cloud | Kubernetes | Cloudflare Tunnels | Nginx | Docker Swarm | Ansible | Terraform | CI/CD
