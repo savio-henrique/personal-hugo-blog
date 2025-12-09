@@ -6,8 +6,8 @@
       <a href={{ "posts/" | relLangURL }}>&lt; blog</a>
     {{ end }}
     {{ if .Params.rss }}
-      <a class="rss-feed-page" href="/posts/index.xml" aria-label="RSS feed for {{ .Title }}">
-        <img class="rss-feed-icon-page" src='/rss-svgrepo-com.svg'/>rss
+  <a class="rss-feed-page" href={{ absURL "posts/index.xml"}} aria-label="RSS feed for {{ .Title }}">
+    <img class="rss-feed-icon-page" src={{ absURL "rss-svgrepo-com.svg"}}/>rss
       </a>
     {{ end }}
   </div>
@@ -15,7 +15,7 @@
     <h1>{{ .Title }}</h1>
     <div class="page-tags">
       {{ range .Params.tags }}
-        <a class="tag" href="{{ "tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+        <a class="tag" href={{ "tags/" | relLangURL }}{{ . | urlize }}>#{{ . }}</a>
       {{ end }}
     </div>
     {{ if .Params.job }}
