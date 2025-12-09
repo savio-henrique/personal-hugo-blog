@@ -7,7 +7,7 @@
     {{ end }}
     {{ if .Params.rss }}
   <a class="rss-feed-page" href={{ absURL "posts/index.xml"}} aria-label="RSS feed for {{ .Title }}">
-    <img class="rss-feed-icon-page" src={{ absURL "rss-svgrepo-com.svg"}}/>rss
+    <img class="rss-feed-icon-page" src={{ with site.Params.rss_image}}{{ absURL . }}{{ end }}/>rss
       </a>
     {{ end }}
   </div>

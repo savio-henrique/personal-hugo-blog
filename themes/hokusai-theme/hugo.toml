@@ -6,6 +6,7 @@ enableEmoji = true
 [params]
   background_image = 'Lambda-pattern.svg'
   content_background_image = 'Points-pattern.svg'
+  rss_image = 'rss-svgrepo-com.svg'
   [params.socials]
     [params.socials.github]
       name = 'GitHub'
