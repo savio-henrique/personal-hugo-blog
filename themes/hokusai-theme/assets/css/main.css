@@ -55,7 +55,7 @@ body::after {
   display: flex;
   flex-direction: column;
   width: 80svw;
-  max-width: 800px;
+  max-width: 80vw;
   height: 70svh;
   align-items: center;
   background-color: var(--bg-dark);
