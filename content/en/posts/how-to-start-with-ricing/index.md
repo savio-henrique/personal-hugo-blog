@@ -223,7 +223,7 @@ Versioning your config files *(namely dotfiles)* is the best way to reuse and ro
 
 ## 3. Choose a specific programs combo and stick with it
 
-Choosing a specific combination of programs is a nice way to test an usable workflow that integrates seamlessly. If any of the programs you chose are not to your liking, you can try to customize it or change it for any alternative to it. Just be certain that it works with the [display server](#2-display-server) and [compositor](#3-compositor) you chose.
+Choosing a specific combination of programs is a nice way to test an usable workflow that integrates seamlessly. If any of the programs you chose are not to your liking, you can try to customize it or change it for any alternative to it. Just be certain that it works with the [display server](#2-display-servers) and [compositor](#3-compositors) you chose.
 
 ## 4. Search on forums, ask people and be nice
 
@@ -256,7 +256,7 @@ My current config is the following:
 ![Chrono Desktop 2](wm-chrono-2.png)
 
 
-> Last updated: 2025-12-16 14:18
+> Last updated: 2025-12-16 19:45
 
 ###### Comments
 
